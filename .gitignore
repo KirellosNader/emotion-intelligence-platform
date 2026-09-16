@@ -1,0 +1,28 @@
+# Secrets -- never commit these
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts & data (regenerate from the notebook instead of committing)
+saved_model/
+saved_models/
+results/
+*.db
+
+# Full experiment output bundle -- multiple model weights (.pt), embeddings
+# and reports, way too large for git. Regenerate by re-running the notebook,
+# or keep a copy of the .zip somewhere outside the repo (Drive/S3/etc).
+# NOTE: this folder is still fully documented in the report -- it's just not
+# pushed to git.
+all_results/
+all_results.zip
+
+# Logs
+logs.txt
+logs/
